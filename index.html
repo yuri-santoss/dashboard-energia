@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard de Energia – PI</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Monitoramento de Energia – Dashboard</h1>
+</header>
+
+<section class="cards">
+
+    <div class="card">
+        <h2>Potência (W)</h2>
+        <span id="potencia">--</span>
+    </div>
+
+    <div class="card">
+        <h2>Consumo (kWh)</h2>
+        <span id="consumo">--</span>
+    </div>
+
+    <div class="card">
+        <h2>Corrente (A)</h2>
+        <span id="corrente">--</span>
+    </div>
+
+    <div class="card">
+        <h2>Tensão (V)</h2>
+        <span id="tensao">--</span>
+    </div>
+
+</section>
+
+<section class="charts">
+
+    <div class="chart-container">
+        <h3>Potência em Tempo Real</h3>
+        <canvas id="chartPotencia"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h3>Corrente em Tempo Real</h3>
+        <canvas id="chartCorrente"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h3>Consumo (kWh)</h3>
+        <canvas id="chartConsumo"></canvas>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
